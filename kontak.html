@@ -1,0 +1,148 @@
+<html>
+<head>
+ 	<link rel="stylesheet" type="text/css" href="web.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<title>FancyBox 1.3.4 | Demonstration</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+<body>
+<table>
+<tr>
+<td height=200><img src="image/websewa.jpg" width=1360 height=200></td>
+</tr>
+
+<tr>
+<td align="left">
+<nav>
+<ul>
+<li>
+<a href="index.html"><font face="comic sans ms" size=2>Home</font></a>
+</li>
+<li>
+<a href="tentangkami.html"><font face="comic sans ms" size=2>Tentang Kami</font></a>
+</li>
+<li>
+<a href=""><font face="comic sans ms" size=2>Jenis Mobil</font></a>
+<ul>
+	<li>
+	<a href="mobilmpv.html"><font face="comic sans ms" size=2>Mobil MPV</font></a>
+	</li>
+	<li>
+	<a href="mobilsuv.html"><font face="comic sans ms" size=2>Mobil SUV</font></a>
+	</li>
+	<li>
+	<a href="mobilsedan.html"><font face="comic sans ms" size=2>Mobil Sedan</font></a>
+	</li>
+</ul>
+</li>
+<li>
+<a href="kontak.html"><font face="comic sans ms" size=2>Kontak</font></a>
+</li>
+</ul>
+</nav>
+</td>
+</tr>
+
+<tr>
+<td height=360>
+<p><font color="blue" size=6> Alamat : Jl Dr Ratna No. 30</font></p>
+<p><font color="blue" size=6> Kontak : Ibnu (081270546947) </font></p>
+<iframe src="https://www.google.com/maps/d/embed?mid=1s1eXxWG13VQlyizyZkjvseuiWaFLXr97" width="640" height="480"></iframe>
+</td>
+</tr>
+
+<tr>
+<td align="center" height="20"><font color="red" face="comic sans ms">&copy;2018 | www.sewamobil.com | All Rights Reserved</font></td>
+</tr>
+</table>
+
+</body>
+</html>
